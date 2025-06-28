@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новини</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="https://pngimg.com/d/newspaper_PNG9.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="container header__container">
+        <a class="logo"><span class="logo__span">MayX</span> News</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Головна</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Політика</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Бізнес</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Технології</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Спорт</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="news__title">Новини по запиту</h1>
+          <input type="text" newsInp placeholder="Ключове слово" name="news" class="news__input"/>
+          <button class="news__button" newsBtn>Отримати новини</button>
+          <div class="news__box" newsBox>
+            <p class="news-box__hint">Тут з'являться новини</p>
+          </div>
+          <div class="button__box hidden" btnBox>
+            <button type="button" prevPage>попередня</button>
+            <p class="button__pages" pageNumber></p>
+            <button type="button" nextPage>наступна</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <a class="logo"><span class="logo__span">MayX</span> News</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Головна</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Політика</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Бізнес</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Технології</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Спорт</a></li>
+          </ul>
+        </nav>
+        <p class="footer__description">
+          &copy;2025 MayX. Використання матеріалів веб-сайту MayX дозволяється лише за умови наявності посилання (для онлайн-видань – гіперпосилання) на MayX, розташованого не нижче третього абзацу оригінального тексту.<br />
+          Матеріали, позначені як PROMOTED, є рекламними та публікуються на комерційній основі. Позиція компанії MayX може відрізнятися від поглядів, висловлених у цих матеріалах.<br />
+          Матеріали з позначкою "Спецпроєкт" також є рекламними. Однак, MayX бере участь у створенні такого контенту та поділяє думки, представлені в цих матеріалах.<br />
+          MayX не несе відповідальності за достовірність фактів та оціночних суджень, що містяться в рекламних матеріалах. Відповідно до чинного законодавства відповідальність за зміст реклами покладається на рекламодавця.<br />
+          MayX є суб'єктом у сфері онлайн-медіа.<br />
+          Усі права захищені.
+        </p>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Про проєкт</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Правила</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
