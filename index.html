@@ -13,7 +13,7 @@
   <body>
     <header>
       <div class="container header__container">
-        <a class="logo"><span class="logo__span">MayX</span> News</a>
+        <a class="logo"><span class="logo__span">MilX</span> News</a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="#">Головна</a></li>
@@ -29,22 +29,34 @@
       <section class="hero">
         <div class="container">
           <h1 class="news__title">Новини по запиту</h1>
-          <input type="text" newsInp placeholder="Ключове слово" name="news" class="news__input"/>
+          <input type="text" newsInp placeholder="Ключове слово" name="news" class="news__input" />
+          <div class="sort__box">
+            <label class="sort__text" for="sortBy">Сортувати за</label>
+            <select class="sort__select" id="sortBy" sortSel>
+              <option value="relevancy">Релевантністю</option>
+              <option value="publishedAt">Датою</option>
+              <option value="popularity">Популярністю</option>
+            </select>
+          </div>
           <button class="news__button" newsBtn>Отримати новини</button>
           <div class="news__box" newsBox>
             <p class="news-box__hint">Тут з'являться новини</p>
           </div>
           <div class="button__box hidden" btnBox>
-            <button type="button" prevPage>попередня</button>
-            <p class="button__pages" pageNumber></p>
-            <button type="button" nextPage>наступна</button>
+            <button class="nav__btn" type="button" prevPage>попередня</button>
+            <button class="nav-page__btn" type="button" frPage>1</button>
+            <button class="nav-page__btn" type="button" secPage>2</button>
+            <button class="nav-page__btn" type="button" thirdPage>3</button>
+            <button class="nav-page__btn" type="button" fourthPage>4</button>
+            <button class="nav-page__btn" type="button" fifthPage>5</button>
+            <button class="nav__btn" type="button" nextPage>наступна</button>
           </div>
         </div>
       </section>
     </main>
     <footer>
       <div class="container">
-        <a class="logo"><span class="logo__span">MayX</span> News</a>
+        <a class="logo"><span class="logo__span">MilX</span> News</a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="#">Головна</a></li>
@@ -55,11 +67,11 @@
           </ul>
         </nav>
         <p class="footer__description">
-          &copy;2025 MayX. Використання матеріалів веб-сайту MayX дозволяється лише за умови наявності посилання (для онлайн-видань – гіперпосилання) на MayX, розташованого не нижче третього абзацу оригінального тексту.<br />
-          Матеріали, позначені як PROMOTED, є рекламними та публікуються на комерційній основі. Позиція компанії MayX може відрізнятися від поглядів, висловлених у цих матеріалах.<br />
-          Матеріали з позначкою "Спецпроєкт" також є рекламними. Однак, MayX бере участь у створенні такого контенту та поділяє думки, представлені в цих матеріалах.<br />
-          MayX не несе відповідальності за достовірність фактів та оціночних суджень, що містяться в рекламних матеріалах. Відповідно до чинного законодавства відповідальність за зміст реклами покладається на рекламодавця.<br />
-          MayX є суб'єктом у сфері онлайн-медіа.<br />
+          &copy;2025 MilX. Використання матеріалів веб-сайту MilX дозволяється лише за умови наявності посилання (для онлайн-видань – гіперпосилання) на MilX, розташованого не нижче третього абзацу оригінального тексту.<br />
+          Матеріали, позначені як PROMOTED, є рекламними та публікуються на комерційній основі. Позиція компанії MilX може відрізнятися від поглядів, висловлених у цих матеріалах.<br />
+          Матеріали з позначкою "Спецпроєкт" також є рекламними. Однак, MilX бере участь у створенні такого контенту та поділяє думки, представлені в цих матеріалах.<br />
+          MilX не несе відповідальності за достовірність фактів та оціночних суджень, що містяться в рекламних матеріалах. Відповідно до чинного законодавства відповідальність за зміст реклами покладається на рекламодавця.<br />
+          MilX є суб'єктом у сфері онлайн-медіа.<br />
           Усі права захищені.
         </p>
         <nav class="nav">
